@@ -1,0 +1,21 @@
+---
+title: "Movie Reviews"
+author: "Kelly Chhor"
+date: "April 23, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("exercise.R")
+```
+
+## `r review$headline`
+
+> `r review$summary`
+
+```{r link, echo = FALSE}
+link_markdown <- paste0("[this link](", review$link, ")")
+```
+
+Follow `r link_markdown` to read the full review
